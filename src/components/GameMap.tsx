@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Polyline, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Polyline, useMapEvents, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
@@ -38,6 +38,19 @@ function MapEvents({ onLocationSelect, disabled }: { onLocationSelect: (lat: num
   return null;
 }
 
+// Component to handle resetting view
+function MapController({ actualLocation }: { actualLocation?: { lat: number; lng: number } | null }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!actualLocation) {
+      map.setView([20, 0], 2);
+    }
+  }, [actualLocation, map]);
+
+  return null;
+}
+
 export default function GameMap({ onLocationSelect, selectedLocation, actualLocation }: MapProps) {
   // Calculate bounds if we have both points
   const bounds =
@@ -62,6 +75,7 @@ export default function GameMap({ onLocationSelect, selectedLocation, actualLoca
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
       />
       <MapEvents onLocationSelect={onLocationSelect} disabled={!!actualLocation} />
+      <MapController actualLocation={actualLocation} />
       
       {selectedLocation && (
         <Marker 
