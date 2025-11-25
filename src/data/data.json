@@ -1,0 +1,42 @@
+[
+    {
+        "locationString": "Tokyo, Fish Market Tsukiji Outer Market",
+        "year": 2019,
+        "lat": 35.664718395520524,
+        "lng": 139.7703180548808,
+        "teammate": "Giulia",
+        "image": "/09310029.JPG"
+    },
+    {
+        "locationString": "Tennis match at the O2",
+        "year": 2019,
+        "lat": 51.50293917254249,
+        "lng": 0.003249497280312801,
+        "teammate": "Lovneet",
+        "image": "IMG-20251120-WA0000.jpg"
+    },
+    {
+        "locationString": "Meteora",
+        "year": 2019,
+        "lat": 39.72172780129196,
+        "lng": 21.630582437715525,
+        "teammate": "Ewa",
+        "image": "PIC_7188.jpg"
+    },
+    {
+        "locationString": "Komodo Island, Indonesia",
+        "year": 2018,
+        "lat": -8.589220112751917,
+        "lng": 119.4469491703052,
+        "teammate": "James",
+        "image": "IMG_20181117_082017_Original.jpg"
+    },
+    {
+        "locationString": "2017 Tenerife, Marathon",
+        "year": 2017,
+        "lat": 28.4188889,
+        "lng": -16.541666666666668,
+        "teammate": "Mike",
+        "image": "IMG_4761.JPG"
+    }
+]
