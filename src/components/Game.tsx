@@ -121,7 +121,7 @@ export default function Game() {
     <div className="flex flex-col h-screen bg-gray-100 overflow-hidden">
       {/* Top Bar */}
       <div className="bg-white shadow-md p-4 z-10 flex justify-between items-center">
-        <div className="font-bold text-xl text-gray-800">Time Guesser Clone</div>
+        <div className="font-bold text-xl text-gray-800">Geo Expansion Time Guessr</div>
         <div className="flex gap-6 text-gray-700 font-medium">
           <span>Round: {round + 1} / {totalRounds}</span>
           <span>Score: {score}</span>
